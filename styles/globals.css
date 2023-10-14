@@ -1,0 +1,128 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.yellow-font {
+  color: #ffc709;
+  font-family: "Arial", "San-Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+
+.outline-none {
+  outline: none;
+}
+
+@keyframes move-up {
+  0% {
+    /* height: 0; */
+    translate: 0 0;
+
+    opacity: 0;
+  }
+
+  100% {
+    /* height: 100%; */
+    translate: 0 -80%;
+
+    opacity: 1;
+  }
+}
+
+@keyframes move-down {
+  0% {
+    /* height: 0; */
+    translate: 0 -10%;
+
+    opacity: 0;
+  }
+
+  100% {
+    /* height: 100%; */
+    translate: 0 0;
+
+    opacity: 1;
+  }
+}
+
+.animate-up {
+  animation: move-up 0.25s ease-in-out 0s 1 normal forwards running;
+}
+
+.animate-down {
+  animation: move-down 0.5s ease-in-out 0s 1 normal forwards running;
+}
+
+.circ {
+  opacity: 0;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.tick {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  -webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+  -moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+  -ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+  -o-transition: stroke-dashoffset 1s 0.5s ease-out;
+  transition: stroke-dashoffset 1s 0.5s ease-out;
+}
+.drawn + svg .path {
+  opacity: 1;
+  stroke-dashoffset: 0;
+}
+
+.DCSvg-class {
+  fill: #ff0000;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  color: #ffffff !important;
+}
+.css-1636szt {
+  fill: #ffffff !important;
+}
+
+.css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
+  fill: #ffffff !important;
+}
+
+.halo-app-banner-bg {
+  background-image: url("/halo-app/app_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.halo-app-banner-bg-L {
+  background-image: url("/halo-app/app_banner_L.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.halo-app-banner-bg-R {
+  background-image: url("/halo-app/app_banner_R.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}

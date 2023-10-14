@@ -1,0 +1,2 @@
+#!/bin/bash
+eval "/${HOME}/.nvm/versions/node/$(node -v)/bin/yarn $1"
