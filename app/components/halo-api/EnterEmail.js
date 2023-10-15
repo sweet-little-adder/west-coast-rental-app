@@ -6,7 +6,7 @@ import axios from "axios";
 import { useContext } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import { HaloApiContext } from "../../halo-api/page";
+import { solApiContext } from "../../sol-api/page";
 
 const EnterEmail = () => {
   const {
@@ -18,7 +18,7 @@ const EnterEmail = () => {
     setError,
     email,
     setEmail,
-  } = useContext(HaloApiContext);
+  } = useContext(solApiContext);
   const { t } = useTranslation();
 
   const handleSubmit = async (e) => {
@@ -57,7 +57,7 @@ const EnterEmail = () => {
               type="text"
               id="email"
               name="email"
-              placeholder={t("halo_api.email")}
+              placeholder={t("sol_api.email")}
               className="!z-10 h-[50px] w-[360px] -translate-x-8 rounded-sm border-b-2 text-center
               font-light
                          hover:drop-shadow-md"
@@ -86,11 +86,11 @@ const EnterEmail = () => {
                        px-11 py-3 text-base font-medium text-white"
             onClick={handleSubmit}
           >
-            {t("halo_api.register")}
+            {t("sol_api.register")}
           </button>
         </form>
       </div>
-      <div className="text-[#9e9e9e]"> {t("halo_api.or")}</div>
+      <div className="text-[#9e9e9e]"> {t("sol_api.or")}</div>
     </>
   );
 };

@@ -5,11 +5,11 @@ import TokenIcon from "@mui/icons-material/Token";
 import axios from "axios";
 import { useContext } from "react";
 
-import { HaloApiContext } from "../../halo-api/page";
+import { solApiContext } from "../../sol-api/page";
 
 const EnterToken = () => {
   const { setRegisteredInfo, setLoading, setRegister, ref, error, setError } =
-    useContext(HaloApiContext);
+    useContext(solApiContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

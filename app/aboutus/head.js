@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>About HALO</title>
+      <title>About sol</title>
     </>
   );
 }

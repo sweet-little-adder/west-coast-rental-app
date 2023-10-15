@@ -23,7 +23,7 @@ export default async function Home() {
       />
       <div className="relative z-20 mx-auto h-full w-full">
         <div className="!z-50 mx-auto w-fit text-[90px]  font-extrabold uppercase tracking-widest tracking-wide text-white transition-all hover:cursor-default hover:text-white/90 hover:drop-shadow-[0_0_9px_rgba(80,255,174,1.5)]">
-          {t("title.halo_energy")}
+          Sol
         </div>
         <Image
           src="/dome5.svg"
@@ -33,17 +33,17 @@ export default async function Home() {
           className="mx-auto w-4/5"
         />
         <div className="z-10 space-y-3 pb-80 text-4xl tracking-wide hover:cursor-default md:text-2xl">
-          <p> {t("text.tagline_div_1")}</p>
+          <p> Where</p>
           <div className="!z-10 mx-auto w-fit text-center text-5xl text-yellow transition-all hover:text-white md:text-4xl">
-            {t("text.simple")}, {t("text.smart")}{" "}
+            Landlord {" "}
             <b className="text-4xl text-white md:text-2xl ">
-              {t("text.and")}&nbsp;
+              meet &nbsp;
             </b>
-            {t("text.sustainable")}
+            Tenants
           </div>
-          <p>{t("text.tagline_div_2")}</p>
-          <p>{t("text.tagline_div_3")}</p>
-          <p>{t("text.tagline_div_4")}</p>
+          <p>Find your home</p>
+          <p>in</p>
+          <p>ONE APP</p>
           <br />
           <div className="translate-y-9/ relative">
             <Image
@@ -58,8 +58,8 @@ export default async function Home() {
               <button className="absolute !my-80 -translate-y-32 -translate-x-1/2 rounded-md p-3 text-3xl font-medium tracking-wide text-white drop-shadow-[0_0_5px_rgba(80,255,174,1.5)] transition-all hover:drop-shadow-[0_0_5px_rgba(255,199,9,1)]">
                 {t("text.find")}
                 <Image
-                  src="/halo-logo-white.svg"
-                  alt="halo-logo-white"
+                  src="/sol-logo-white.svg"
+                  alt="sol-logo-white"
                   width={160}
                   height={160}
                   className="mx-auto"

@@ -7,7 +7,7 @@ import axios from "axios";
 import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import CountDown from "../../components/halo-api/CountDown";
+import CountDown from "../../components/sol-api/CountDown";
 import Loading from "../../components/Loading";
 
 export default function ResetToken() {
@@ -106,7 +106,7 @@ export default function ResetToken() {
                 type="text"
                 id="email"
                 name="email"
-                placeholder={t("halo_api.email")}
+                placeholder={t("sol_api.email")}
                 className="-/translate-x-8 mx-auto h-[50px] w-[360px] rounded-sm border-b-2 text-center font-light"
                 {...{ ref }}
               />

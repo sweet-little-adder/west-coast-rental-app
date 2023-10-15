@@ -60,7 +60,7 @@ const MobileMenu = ({ clickMenu, handleChangeLanguage }) => {
               {t("title.charging_faq")}
             </button>
             <br />
-            <button onClick={() => clickMenu("/halo-app")}>
+            <button onClick={() => clickMenu("/sol-app")}>
               {t("title.mobile_app")}
             </button>
             <br />
@@ -75,15 +75,15 @@ const MobileMenu = ({ clickMenu, handleChangeLanguage }) => {
           </div>
           <button
             onClick={() => {
-              if (pathname === "/halo-api") {
+              if (pathname === "/sol-api") {
                 document.location.reload();
               } else {
-                clickMenu("/halo-api");
+                clickMenu("/sol-api");
               }
             }}
             className="ml-9 flex items-center justify-start text-3xl font-medium"
           >
-            {t("title.halo_api")}
+            {t("title.sol_api")}
           </button>
         </div>
       </div>
@@ -126,8 +126,8 @@ const MobileMenu = ({ clickMenu, handleChangeLanguage }) => {
               {t("title.contact_us")}
             </button>
             <br />
-            <button onClick={() => clickMenu("/halo-bot")}>
-              {t("title.halo_bot")}
+            <button onClick={() => clickMenu("/sol-bot")}>
+              {t("title.sol_bot")}
             </button>
           </div>
         </div>

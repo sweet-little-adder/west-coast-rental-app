@@ -5,7 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import axios from "axios";
 import { useContext, useState } from "react";
 
-import { HaloApiContext } from "../../halo-api/page";
+import { solApiContext } from "../../sol-api/page";
 import CountDown from "./CountDown";
 
 const VerifyEmail = () => {
@@ -20,7 +20,7 @@ const VerifyEmail = () => {
     error,
     setError,
     email,
-  } = useContext(HaloApiContext);
+  } = useContext(solApiContext);
   const copyToClipboard = (e) => {
     navigator.clipboard.writeText(e.target.innerText);
     setCopied(true);

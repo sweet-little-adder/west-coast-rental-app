@@ -75,15 +75,14 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`${
-        pathname === "/" ? "absolute" : "relative"
-      } !z-50 h-[100px] w-full ${pathname !== "/" && "bg-green"}`}
+      className={`${pathname === "/" ? "absolute" : "relative"
+        } !z-50 h-[100px] w-full ${pathname !== "/" && "bg-green"}`}
     >
       {/* logo */}
       <div className="absolute flex h-full items-center pl-10 uppercase">
         <Link href="/">
           <Image
-            src="/halo-logo-white.svg"
+            src="/sol-logo-white.svg"
             alt="bolt"
             width={50}
             height={50}
@@ -184,18 +183,16 @@ export default function Navbar() {
         <div className="flex items-center text-white">
           <button
             onClick={() => handleChangeLanguage("en")}
-            className={`${
-              i18n.language === "en" ? "opacity-100" : "opacity-60"
-            } hover:opacity-100`}
+            className={`${i18n.language === "en" ? "opacity-100" : "opacity-60"
+              } hover:opacity-100`}
           >
             EN
           </button>
           ｜
           <button
             onClick={() => handleChangeLanguage("zh")}
-            className={`${
-              i18n.language === "zh" ? "opacity-100" : "opacity-60"
-            }  hover:opacity-100`}
+            className={`${i18n.language === "zh" ? "opacity-100" : "opacity-60"
+              }  hover:opacity-100`}
           >
             繁
           </button>

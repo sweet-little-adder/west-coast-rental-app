@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>HALO Fleet Charging</title>
+      <title>sol Fleet Charging</title>
     </>
   );
 }

@@ -74,7 +74,7 @@ export function SolutionSubmenu() {
           icon={<PhoneAndroid />}
           label={t("title.mobile_app")}
           desc="Book our chargers with a few touches"
-          href="/halo-app"
+          href="/sol-app"
         />
         <SubmenuItem
           icon={<Quiz />}
@@ -102,9 +102,9 @@ export function SolutionSubmenu() {
         </span>
         <SubmenuItem
           icon={<Cloud />}
-          label={t("title.halo_api")}
+          label={t("title.sol_api")}
           desc="Access chargers data"
-          href="/halo-api"
+          href="/sol-api"
         />
       </div>
     </div>
@@ -124,9 +124,9 @@ export function CustomerSubmenu() {
       />
       <SubmenuItem
         icon={<ContactSupport />}
-        label={t("title.halo_bot")}
+        label={t("title.sol_bot")}
         desc=""
-        href="/halo-bot"
+        href="/sol-bot"
       />
     </div>
   );

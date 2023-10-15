@@ -10,7 +10,7 @@ const Header = () => {
     <header className="h-[241px] w-full bg-green">
       {pathname !== "/" && (
         <Image
-          src="/halo-logo-white.svg"
+          src="/sol-logo-white.svg"
           alt="logo white"
           width={100}
           height={100}

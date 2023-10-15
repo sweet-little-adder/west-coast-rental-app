@@ -39,15 +39,15 @@ export default function EmailVerified() {
         </p>
         {copied && (
           <div className="absolute bottom-[120px]  right-1/2 translate-x-14 text-base text-yellow">
-            {t(halo_token.copied)}
+            {t(sol_token.copied)}
           </div>
         )}
       </div>
       <button
-        onClick={() => router.push("/halo-api/api-status")}
+        onClick={() => router.push("/sol-api/api-status")}
         className="rounded-lg bg-yellow px-5 py-3 text-lg font-light  text-white"
       >
-        {t(halo_api.view_api_status)}
+        {t(sol_api.view_api_status)}
       </button>
     </div>
   );

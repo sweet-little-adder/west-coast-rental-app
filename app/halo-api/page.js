@@ -6,13 +6,13 @@ import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { useRouter } from "next/navigation";
 import { createContext, useRef, useState } from "react";
 
-import EnterEmail from "../components/halo-api/EnterEmail";
-import VerifyEmail from "../components/halo-api/VerifyEmail";
+import EnterEmail from "../components/sol-api/EnterEmail";
+import VerifyEmail from "../components/sol-api/VerifyEmail";
 import Loading from "../components/Loading";
 
-export const HaloApiContext = createContext();
+export const solApiContext = createContext();
 
-export default function HaloApi() {
+export default function solApi() {
   const [registeredInfo, setRegisteredInfo] = useState();
   const [loading, setLoading] = useState(false);
   const [register, setRegister] = useState(true);
@@ -28,7 +28,7 @@ export default function HaloApi() {
   const router = useRouter();
 
   return (
-    <HaloApiContext.Provider
+    <solApiContext.Provider
       value={{
         registeredInfo,
         setRegisteredInfo,
@@ -54,7 +54,7 @@ export default function HaloApi() {
         >
           <CloudQueueIcon className="!text-6xl text-yellow" />
           <div className="relative flex justify-center">
-            HALO API
+            sol API
             <QuestionMarkIcon
               className="shadow-inner-1 [0_35px_60px_-15px_rgba(0,0,0,0.3)] -translate-y-5 cursor-pointer
               rounded-full bg-white p-1 !text-3xl text-[#c9c9c9] drop-shadow-md "
@@ -72,13 +72,13 @@ export default function HaloApi() {
         </div>
         {info && (
           <div className="animate-down pointer-events-none mx-auto w-2/3  space-y-3 text-left text-xl font-light leading-relaxed text-[#808080] lg:w-1/3 lg:text-sm">
-            <p>{t("halo_api.instruction_p1")}</p>
+            <p>{t("sol_api.instruction_p1")}</p>
             <p>
-              {t("halo_api.instruction_p2_1")} <br />
-              {t("halo_api.instruction_p2_2")} <br />
-              {t("halo_api.instruction_p2_3")}
+              {t("sol_api.instruction_p2_1")} <br />
+              {t("sol_api.instruction_p2_2")} <br />
+              {t("sol_api.instruction_p2_3")}
             </p>
-            <p>{t("halo_api.instruction_p3")}</p>
+            <p>{t("sol_api.instruction_p3")}</p>
           </div>
         )}
         {register && <EnterEmail />}
@@ -87,13 +87,13 @@ export default function HaloApi() {
           <button
             className="rounded-lg bg-green px-5 py-3 text-base text-white"
             onClick={() => {
-              router.push("/halo-api/api-status");
+              router.push("/sol-api/api-status");
             }}
           >
-            {t("halo_api.view_api_status")}
+            {t("sol_api.view_api_status")}
           </button>
         )}
       </div>
-    </HaloApiContext.Provider>
+    </solApiContext.Provider>
   );
 }

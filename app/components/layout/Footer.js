@@ -14,15 +14,14 @@ const Footer = () => {
 
   return (
     <footer
-      className={`${
-        pathname === "/locations" && "hidden"
-      } w-full overflow-y-hidden bg-green pt-20 text-[24px] !text-white`}
+      className={`${pathname === "/locations" && "hidden"
+        } w-full overflow-y-hidden bg-green pt-20 text-[24px] !text-white`}
     >
       <Container className="flex flex-wrap items-start justify-center">
         {/* left block */}
         <div className="flex items-start pr-12 lg:w-[550px] lg:gap-6">
           <Image
-            src="/halo-logo-white.svg"
+            src="/sol-logo-white.svg"
             alt="bolt"
             width={80}
             height={80}
@@ -30,26 +29,26 @@ const Footer = () => {
           />
           <div className="hidden text-sm lg:block">
             <p className="text-base leading-loose">
-              With HALO, we aim to provide&nbsp;
+              With sol, we aim to provide&nbsp;
               <b>Simple, Smart and Sustainable</b>&nbsp;SaaS solutions to enable
               our partners to make EV charging available to all EV drivers at
               home, at work and on the road.
             </p>
             <div className="mt-5 ml-[-6px] flex gap-4">
               <a
-                href="https://www.linkedin.com/company/halo-energy-limited/"
+                href="https://www.linkedin.com/company/sol-energy-limited/"
                 target="blank"
               >
                 <LinkedIn sx={{ fontSize: "32px" }} />
               </a>
               <a
-                href="https://www.instagram.com/halo_energy_official/"
+                href="https://www.instagram.com/sol_energy_official/"
                 target="blank"
               >
                 <Instagram sx={{ fontSize: "32px" }} />
               </a>
               <a
-                href="https://www.facebook.com/HALOEnergyLimited/"
+                href="https://www.facebook.com/solEnergyLimited/"
                 target="blank"
               >
                 <Facebook sx={{ fontSize: "32px" }} />
@@ -75,8 +74,8 @@ const Footer = () => {
             <Link className="" href="/contact">
               {t("title.contact_us")}
             </Link>
-            <Link className="" href="/halo-bot">
-              {t("title.halo_bot")}
+            <Link className="" href="/sol-bot">
+              {t("title.sol_bot")}
             </Link>
           </div>
 
@@ -102,7 +101,7 @@ const Footer = () => {
             <Link className="" href="/locations">
               {t("title.charger_map")}
             </Link>
-            <Link className="" href="/halo-app">
+            <Link className="" href="/sol-app">
               {t("title.mobile_app")}
             </Link>
             <Link className="" href="/faq">
@@ -123,15 +122,15 @@ const Footer = () => {
             <span className="mb-2 text-xl font-bold uppercase">
               {t("title.for_developer")}
             </span>
-            <Link className="mb-6" href="/halo-api">
-              {t("title.halo_api")}
+            <Link className="mb-6" href="/sol-api">
+              {t("title.sol_api")}
             </Link>
           </div>
         </div>
 
         <div className="mx-auto mt-10 flex basis-11/12 border-t border-solid border-white pt-4 text-xs">
           <span className="basis-1/3">
-            Copyright © {new Date().getFullYear()} Halo Energy
+            Copyright © {new Date().getFullYear()} sol Energy
           </span>
 
           <div className="flex basis-1/3 justify-center">

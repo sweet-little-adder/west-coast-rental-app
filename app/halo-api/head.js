@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>HALO API</title>
+      <title>sol API</title>
     </>
   );
 }

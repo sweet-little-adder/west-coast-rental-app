@@ -8,7 +8,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import { Suspense, useState } from "react";
 
-import ApiStatusInfo from "../../components/halo-api/ApiStatusInfo";
+import ApiStatusInfo from "../../components/sol-api/ApiStatusInfo";
 import Loading from "../../components/Loading";
 
 export default function ApiStatus() {
@@ -55,7 +55,7 @@ export default function ApiStatus() {
               <input
                 type="text"
                 className=" !z-10 h-[50px] w-[400px] overflow-visible rounded-sm border-b-2 p-3 text-center text-center text-lg font-light"
-                placeholder={t("halo_api.email")}
+                placeholder={t("sol_api.email")}
                 id="#email"
               />
             </div>
@@ -70,7 +70,7 @@ export default function ApiStatus() {
             </div>
             <button
               className="text-xl font-light"
-              onClick={() => router.push("/halo-api/reset-token")}
+              onClick={() => router.push("/sol-api/reset-token")}
             >
               {t("api_status.iforgot")}
             </button>
@@ -80,7 +80,7 @@ export default function ApiStatus() {
             className="drop-shadow.md rounded-xl bg-yellow p-5 text-base text-white hover:drop-shadow-[0_0px_3px_rgba(255,199,9,1.8)]"
             onClick={(e) => handleSubmit(e)}
           >
-            {t("halo_api.view_api_status")}
+            {t("sol_api.view_api_status")}
           </button>
           <div className="-translate-y-9 text-sm font-bold text-[#c8274b]">
             {error && error}

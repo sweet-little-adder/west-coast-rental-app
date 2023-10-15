@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html style={{ fontFamily: "Nunito Sans" }}>
-      <title>HALO ENERGY</title>
+      <title>sol ENERGY</title>
       <body>
         <div className="w-full overflow-clip ">
           <div className=" lg:hidden">

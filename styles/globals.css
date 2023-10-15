@@ -108,20 +108,20 @@ img {
   fill: #ffffff !important;
 }
 
-.halo-app-banner-bg {
-  background-image: url("/halo-app/app_banner.jpg");
+.sol-app-banner-bg {
+  background-image: url("/sol-app/app_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.halo-app-banner-bg-L {
-  background-image: url("/halo-app/app_banner_L.jpg");
+.sol-app-banner-bg-L {
+  background-image: url("/sol-app/app_banner_L.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.halo-app-banner-bg-R {
-  background-image: url("/halo-app/app_banner_R.jpg");
+.sol-app-banner-bg-R {
+  background-image: url("/sol-app/app_banner_R.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;

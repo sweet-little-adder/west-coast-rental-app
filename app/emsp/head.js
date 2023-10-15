@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>HALO EMSP</title>
+      <title>sol EMSP</title>
     </>
   );
 }

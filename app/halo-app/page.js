@@ -13,9 +13,9 @@ export default function Home() {
     <div className="text-center text-4xl font-bold text-green ">
       {/* <div className="mx-auto mb-12 flex -translate-x-2 items-center justify-center text-3xl font-black tracking-wide text-black/90">
         <SmartphoneIcon className="mr-2 !text-4xl !text-yellow" />
-        <h>{t("title.halo_app")}</h>
+        <h>{t("title.sol_app")}</h>
       </div> */}
-      <Title title="halo_app" />
+      <Title title="sol_app" />
       <Link
         className="mx-auto mt-6 flex w-[200px] justify-center rounded-lg bg-blue p-3 text-center text-xl font-normal text-white drop-shadow-[0_0_5px_rgba(26,70,143,0.5)]"
         href={"https://epluscharging.com/login"}
@@ -24,7 +24,7 @@ export default function Home() {
         {t("button.log_in")}
       </Link>
       <Image
-        src="/halo-app/instructions.svg"
+        src="/sol-app/instructions.svg"
         alt="iOs"
         width={3180}
         height={1000}
@@ -41,10 +41,10 @@ export default function Home() {
         allowFullscreen
       ></iframe>
       <div className="flex h-full w-full flex-wrap ">
-        <div className="halo-app-banner-bg-L flex aspect-square w-full flex-col items-center justify-center space-y-12 lg:w-1/3 lg:space-y-6 ">
+        <div className="sol-app-banner-bg-L flex aspect-square w-full flex-col items-center justify-center space-y-12 lg:w-1/3 lg:space-y-6 ">
           <Link href="https://apps.apple.com/app/id1587834540" target="blank">
             <Image
-              src="/halo-app/iOs_app.svg"
+              src="/sol-app/iOs_app.svg"
               alt="iOs"
               width={3180}
               height={1000}
@@ -56,7 +56,7 @@ export default function Home() {
             target="blank"
           >
             <Image
-              src="/halo-app/android_app.svg"
+              src="/sol-app/android_app.svg"
               alt="iOs"
               width={3180}
               height={1000}
@@ -64,7 +64,7 @@ export default function Home() {
             />
           </Link>
         </div>
-        <div className="halo-app-banner-bg-R h-[800px] w-full lg:h-auto lg:w-2/3"></div>
+        <div className="sol-app-banner-bg-R h-[800px] w-full lg:h-auto lg:w-2/3"></div>
       </div>
     </div>
   );
