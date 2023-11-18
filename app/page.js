@@ -12,7 +12,7 @@ export default async function Home() {
       className="!z-10 mx-auto space-y-20 text-center font-extralight  text-white"
       style={{ fontFamily: "Nunito Sans" }}
     >
-     
+     login
       </div>
     </div>
   );
