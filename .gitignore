@@ -6,3 +6,5 @@
 
 # Ignore compiled binaries
 /bin/
+
+.next
